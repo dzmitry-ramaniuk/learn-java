@@ -17,4 +17,4 @@ plugins {
 }
 
 rootProject.name = 'learn-java'
-include('app')
+include('app', 'patterns')
