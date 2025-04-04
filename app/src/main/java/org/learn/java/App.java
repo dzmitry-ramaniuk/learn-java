@@ -3,11 +3,14 @@
  */
 package org.learn.java;
 
+import org.learn.java.patterns.factorymethod.FactoryMethodUtils;
+
 import static org.learn.java.patterns.singleton.SingletonUtils.executeForSynchronisedSingleton;
 
 public class App {
     public static void main(String[] args) {
-        executeForSynchronisedSingleton(1000, 4);
+        FactoryMethodUtils.createWindowDialog("windows");
+        FactoryMethodUtils.createWindowDialog("html");
     }
 
 
